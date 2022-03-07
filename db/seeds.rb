@@ -7,16 +7,17 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-# Company.destroy_all
+Company.destroy_all
+Group.destroy_all
 
-# big_hit = Company.create(name:'Big Hit', ceo:'Jiwon Park', worth:'5,500,000,000')
-# jyp = Company.create(name:'JYP', ceo:'Jung Wook', worth:'1,100,000,000')
-# yg = Company.create(name:'YG', ceo:'Hwang Bo-kyung', worth:'800,000,000')
-# sm = Company.create(name:'SM', ceo:'Lee Sung Soo', worth:'665,000,000')
-# stone = Company.create(name:'STONE', ceo:'Jung Hyung-jin', worth:'200,000,000')
+big_hit = Company.create(name:'Big Hit', ceo:'Jiwon Park', worth:'5,500,000,000')
+jyp = Company.create(name:'JYP', ceo:'Jung Wook', worth:'1,100,000,000')
+yg = Company.create(name:'YG', ceo:'Hwang Bo-kyung', worth:'800,000,000')
+sm = Company.create(name:'SM', ceo:'Lee Sung Soo', worth:'665,000,000')
+stone = Company.create(name:'STONE', ceo:'Jung Hyung-jin', worth:'200,000,000')
 
-# puts "seeded DB"
-# p Company.all
+puts "seeded DB"
+p Company.all
 
 big_hit.groups.create(name:'BTS', members:7, debuted:2013)
 big_hit.groups.create(name:'TXT', members:5, debuted:2019)
@@ -41,3 +42,6 @@ sm.groups.create(name:'Red Velvet', members:5, debuted:2014)
 sm.groups.create(name:'NCT', members:22, debuted:2017)
 sm.groups.create(name:'SuperM', members:7, debuted:2019)
 sm.groups.create(name:'aespa', members:4, debuted:2020)
+
+puts 'DB Seeded'
+p Groups.all

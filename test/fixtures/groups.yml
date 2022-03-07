@@ -3,11 +3,11 @@
 one:
   name: MyString
   members: 1
-  albumns: 1
+  debuted: 1
   company: one
 
 two:
   name: MyString
   members: 1
-  albumns: 1
+  debuted: 1
   company: two
